@@ -19,6 +19,11 @@ describe('PigGame', () => {
     expect(game.currentScore).toEqual(0);
   })
 
+  test('It should add each dice roll to the players currentScore', () => {
+    PigGame.prototype.diceRoll();
+    expect(PigGame.currentScore).toEqual(PigGame.randomNumber);
+  })
+
 })
 
 describe('Player', () => {
