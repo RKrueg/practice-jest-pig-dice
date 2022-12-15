@@ -13,14 +13,14 @@ PigGame.prototype.randomNumber = function () {
   return roll;
 }
 
-// PigGame.prototype.diceRoll = function () {
-//   let roll = PigGame.prototype.randomNumber();
-//   if (roll !== 1) {
-//     this.currentScore += roll;
-//   } else {
-//     this.currentScore = 0;
-//   }
-// }
+PigGame.prototype.diceRoll = function () {
+  let roll = PigGame.prototype.randomNumber();
+  if (roll !== 1) {
+    this.currentScore += roll;
+  } else {
+    this.currentScore = 0;
+  }
+}
 
 export function Player(userName) {
   this.userName = userName;
