@@ -13,13 +13,13 @@ describe('PigGame', () => {
     expect(number).toBeLessThanOrEqual(6);
   })
 
-//   test('It should change currentScore to 0 if a 1 is rolled', () => {
-//     let game = new PigGame(0, 8);
-//     game.diceRoll();
-//     expect(game.currentScore).toEqual(0);
-//   })
+  test('It should change currentScore to 0 if a 1 is rolled', () => {
+    let game = new PigGame(0, 8);
+    game.diceRoll();
+    expect(game.currentScore).toEqual(0);
+  })
 
-// })
+})
 
 describe('Player', () => {
 
@@ -28,6 +28,4 @@ test('It should create a Player object with userName and totalScore', () => {
   expect(player1.userName).toEqual('bob');
   expect(player1.totalScore).toEqual(0)
 })
-})
-
 })
